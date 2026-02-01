@@ -1,42 +1,42 @@
-# sv
+# RestFlow
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+**RestFlow** is a lightweight, minimal web based REST client built on **Sveltekit**, inspired by tools like Thunder Client and Postman — but focused on speed, simplicity, and zero bloat.
 
-## Creating a project
+Perfect for quick API testing without heavy Electron apps.
 
-If you're seeing this, you've probably already done this step. Congrats!
+---
 
-```sh
-# create a new project
-npx sv create my-app
-```
+## Features
 
-To recreate this project with the same configuration:
+- Super lightweight & fast
+- Supports common HTTP methods
+  - `GET`, `POST`, `PUT`, `DELETE`
+- Request body support
+  - Raw JSON / Text
+  - Form Data (multipart)
+- Reactive state using Svelte stores
+- Response viewer
+  - Status code
+  - Headers
+  - Raw response body
+- Clean, minimal UI
 
-```sh
-# recreate this project
-npx sv create --template minimal --no-types --add prettier eslint sveltekit-adapter="adapter:static" tailwindcss="plugins:none" --install npm restflow
-```
+---
 
-## Developing
+## Built With
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+- **Sveltekit**
+- Native **Fetch API**
+- Svelte Stores
+- Pure CSS (no UI frameworks)
 
-```sh
-npm run dev
+---
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+## Contributing
 
-## Building
+Contributions are welcome!
 
-To create a production version of your app:
-
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+- Fork the repo
+- Create a new branch
+- Commit your changes
+- Open a Pull Request
